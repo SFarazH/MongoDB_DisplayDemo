@@ -51,6 +51,8 @@ class _MongoDbDisplayState extends State<MongoDbDisplay>{
             Text("${data.name}"),
             SizedBox(height: 5,),
             Text("${data.location}"),
+            SizedBox(height: 5,),
+            Text("marks:" +  "${data.marks}"),
           ],
         ) );
   }

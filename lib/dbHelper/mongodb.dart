@@ -15,6 +15,11 @@ class MongoDatabase{
 
   }
 
+  static Future<List<Map<String, dynamic>>> getQueryData() async{
+    final data = userCollection.find(where.lte('marks', 50)).toList();
+    return data;
+  }
+
   static Future<List<Map<String, dynamic>>> getData() async {
       final arrData = await userCollection.find().toList();
       return arrData;

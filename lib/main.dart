@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test1111/dbHelper/mongodb.dart';
 import 'package:test1111/display.dart';
 import 'package:test1111/insert.dart';
+import 'package:test1111/query.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.red,
       ),
-      home: MongoDbDisplay(),
+      home: QueryDatabase(),
     );
   }
 }
