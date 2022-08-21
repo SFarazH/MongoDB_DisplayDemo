@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:test1111/MongoDBMain.dart';
 import 'package:test1111/dbHelper/mongodb.dart';
 
+
+
 class QueryDatabase extends StatefulWidget{
   QueryDatabase ({Key? key}) : super(key:key);
 
@@ -42,7 +44,12 @@ class _QueryDatabaseState extends State<QueryDatabase> {
     return Card(
 
       child: Column(
-        children: [Text("${data.name}")],
+        children: [
+          Text("${data.State}"),
+          Text("${data.Stage}"),
+          Text("${data.AssetCategory}"),
+          Text("${data.Block}"),
+        ],
       ),
     );
   }
