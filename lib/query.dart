@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:test1111/MongoDBMain.dart';
 import 'package:test1111/dbHelper/mongodb.dart';
-
-
+import 'package:mongo_dart/mongo_dart.dart' as M;
+import 'package:test1111/insert.dart';
 
 class QueryDatabase extends StatefulWidget{
   QueryDatabase ({Key? key}) : super(key:key);
-
   @override
   _QueryDatabaseState createState() => _QueryDatabaseState();
 }
@@ -41,14 +40,16 @@ class _QueryDatabaseState extends State<QueryDatabase> {
   }
 
   Widget displayData(MongoDbModel data){
+
     return Card(
 
       child: Column(
         children: [
-          Text("${data.State}"),
-          Text("${data.Stage}"),
-          Text("${data.AssetCategory}"),
-          Text("${data.Block}"),
+          Text("Name:"+"${data.name}"),
+          Text("ID:"+"${data.empID}"),
+          //Text("Current Work" + "${data.currentwork}"),
+          //Text("Attendance:"+"${data.attendance}"),
+          //Text("flag:"+"${data.flag}"),
         ],
       ),
     );

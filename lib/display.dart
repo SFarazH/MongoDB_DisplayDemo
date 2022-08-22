@@ -46,12 +46,7 @@ class _MongoDbDisplayState extends State<MongoDbDisplay>{
 
         child:Column(
           children: [
-            Text("${data.District}"),
-            SizedBox(height: 5,),
-            Text("${data.State}"),
-            SizedBox(height: 5,),
-            Text("${data.AssetCategory}"),
-            SizedBox(height: 5,),
+
             //Text("marks:" +  "${data.marks}"),
           ],
         ) );
